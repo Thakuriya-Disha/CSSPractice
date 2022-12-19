@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Preparation 2</title>
+    <link rel="stylesheet" href="Prep2.css" />
+</head>
+<body>
+    <h1>CSS Interview Preparation - DAY II</h1>
+    <div class="flex">
+    <div class="boxb">
+        Hello I am blue.
+    </div>
+    <br><br><br>
+    <div class="boxp">
+        Hello I am not blue.
+    </div>
+    </div>
+    <div>
+        <h2 class="Q"> What is box-sizing? </h2>
+        <div class="A">
+            Box-sizing defines how width and height are applied to an element. There are 2 types of values of the box-sizing property:
+            1) content-box and 2) border-box. The default value is: content-box.
+            <ul>
+                <li>content-box: The actual width is the sum of content-width, padding and border.<br>
+                    Changing padding and border changes the actual width of the element.</li>
+                <li>border-box: The actual width includes all three: content-width, padding and border.<br>
+                    Changing padding and border does not change the actual width of the element.</li>
+            </ul>
+            That is why despite both blue and pink boxes having the same values for height and width (i.e. 200px), the boxes appear different.
+        </div>
+    </div>
+    <br><hr>
+    <div class="container1">
+        <div class="dance"></div>
+        <div class="dance"></div>
+        <div class="dance"></div>
+    </div>
+    <h2 class="Q"> What is animation-delay? </h2>
+    <div class="A">
+        Animation-delay is the property that delays the start time of an animation. In the above example, there is a delay of 2 seconds.
+    </div>
+    <hr>
+    <h2 class="Q">Write code to show any animation example</h2>
+    <div class="A">In an animation, an element gradually changes from one style to another. To implement an animation, keyframes are used. Keyframes define animation rules and give us more control over animation.<br>
+    An element goes from initial state to final state with intermediate steps in between. And animations do not need a trigger.</div>
+    <div class="container2"></div>
+    <div class="empty"></div>
+    <hr>
+    <h2 class="Q">What is grid-template-columns used for?</h2>
+    <div class="A">
+        Grid is a 2-dimensional property, that arranges contents in both rows and columns. It is useful to make complex patterns/structures.<br><br>
+        grid-template-columns is used to create columns in a grid. It specifies the number of columns and the width of those columns.
+    </div>
+    <hr>
+    <h2 class="Q">Which property will you use to merge cells vertically & horizontally in a grid?</h2>
+    <div class="A">
+        To merge cells vertically, we use: grid-column-start and grid-column-end<br><br>
+        To merge cells horizontally, we use: grid-row-start and grid-row-end.
+    </div>
+    <hr>
+    <h2 class="Q">What is the difference between display:none and visibility:hidden?</h2>
+    <div class="A">
+        When display:none is used, the element is removed altogether. No empty space is left<br>
+        In visibility:hidden, it hides the element and an empty space is left behind. This is preferred as the overall structure remains unaffected.<br>&nbsp
+    </div>
+    <hr>
+    <div class="practice">
+        <div class="box1 border"><h3>Box 1</h3></div>
+        <div class="box2 border"><h3>Box 2</h3></div>
+        <div class="box3 border"><h3>Box 3</h3></div>
+        <div class="box4 border"><h3>Box 4</h3></div>
+        <div class="box5 border"><h3>Box 5</h3></div>
+        <div class="box6 border"><h3>Box 6</h3></div>
+        <div class="box7 border"><h3>Box 7</h3></div>
+    </div>
+</body>
+</html>

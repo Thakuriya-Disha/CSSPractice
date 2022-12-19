@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Prep.css" />
+    <title>Interview Preparation Day 1</title>
+</head>
+<body>
+    <h1>CSS Interview Preparation - DAY I</h1>
+    <div class="Q">
+        <h3>1) Explain inline, internal and external stylesheet.</h3>
+    </div>
+    <div class="A">
+        <p>
+            Inline: It is defined using the "style" attribute inside the opening tag, in the HTML dcocument. Syntax: style = "property:value"<br><br>
+            Internal: It is defined inside &lt;head&gt; of HTML document, using the &lt;style&gt; tag.<br>
+            <pre>Syntax:
+            &lt;head&gt;
+                &lt;style&gt;
+                selector {
+                    property: value;
+                    property: value;
+                }
+                &lt;/style&gt;
+            &lt;/head&gt;</pre><br>
+            External: The self-closing &lt;link&gt; tag is used inside &lt;head&gt; with "href" attribute (hypertext reference) that links external CSS file to the HTML file, and the "rel" attribute states the relation of the linked file with the HTML file which is "stylesheet".
+        </p>
+    </div>
+    <hr>
+    <div class="Q">
+        <h3>2) What is CSS Box Model?</h3>
+    </div>
+    <div class="A">
+        <p>
+            The CSS Box Model is a representational model that consists of: the content area, padding, border and margin. It is a box that wraps around every HTML element. Box Model plays an important role in design and layout of a website.<br>
+            Content: This is the area where the actual content (text, images, videos, forms, tables) appears.<br>
+            Padding: The transparent area which is around the content.<br>
+            Border: It goes around the padding and content.<br>
+            Margin: It is the transparent area outside the border.
+        </p>
+    </div>
+    <hr>
+    <div class="Q">
+        <h3>3) What is the difference between padding and margin?</h3>
+    </div>
+    <div class="A">
+        <p>
+            PADDING:<br>
+            <ol type="i">
+                <li>Padding is the space between content and border.</li>
+                <li>Value for padding can never be negative.</li>
+                <li>When value of padding is changed, the size of the element gets affected.</li>
+            </ol><br>
+            MARGIN:<br>
+            <ol type="i">
+                <li>Margin is the space between border and nearby element.</li>
+                <li>Value for padding can be negative.</li>
+                <li>When value of margin is changed, the size of the element remains unaffected.</li>
+            </ol>
+        </p>
+    </div>
+    <hr>
+    <div class="Q">
+        <h3>4) Difference between flex row and column</h3>
+    </div>
+    <div class="A">
+        <p>They are values for the flex-direction property.</p>
+        <ul type="none">
+            <li>flex-direction: row;
+                <ul>
+                    <li>It arranges items inside a flexbox horizontally.</li>
+                </ul>
+            </li><br>
+            <li>flex-direction: column;
+                <ul>
+                    <li>It arranges items inside a flexbox vertically.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="Q">
+        <h3>5) What does justify-content allow you to do?</h3>
+    </div>
+    <div class="A">
+        <p>
+            Justify-content is one of the sub-properties of flexbox. It spcifies how flex items are distributed horizontally inside the flex-container.
+            It works on the origin (also called the main axis or the X-axis).<br>
+            There are 7 values of the justify-content. They are: stretch, center, flex-start, flex-end, space-between, space-around, space-evenly.
+        </p>
+    </div>
+    <hr>
+    <div class="Q">
+        <h3>6) Difference between absolute and relative positioning</h3>
+    </div>
+    <div class="A">
+        <p>
+            RELATIVE: It places an element relative to its current position without changing the layout around it. (that is, it leaves behind a gap)<br><br>
+            ABSOLUTE: It places an element relative to its parent's position and changes the layout around it. (that is, we see no gap being created)
+        </p>
+    </div>
+    <hr>
+    <div class="Q">
+        <h3>7) What is the z-index in CSS?</h3>
+    </div>
+    <div class="A">
+        <p>
+            The z-index determines the stack level of an element. (Stack level: refers to the element's position on the z-axis)
+            Negative values can be given to the z-index.<br><br>
+            Implementation of z-index:
+        </p>
+    </div>
+    <div class="parent">
+    <div class="child1">
+        <div class="child2">
+            <div class="child3"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
