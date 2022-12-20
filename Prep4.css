@@ -1,0 +1,141 @@
+body{
+    width:720px;
+}
+header{
+    background-color: green;
+    width:1490px;
+}
+.todisplay{
+    display:flex;
+    justify-content:space-between;
+}
+.logo{
+    background-image: url("./media/IMG-20221212-WA0033.jpg");
+    background-size: contain;
+    width:150px; height:150px;
+    position:relative;
+    left:40px;
+}
+nav{
+    position:relative;
+    right:40px; top:40px;
+}
+nav ul{
+    list-style: none;
+    word-spacing:30px;
+}
+ul li{
+    display:inline-block;
+}
+nav a{
+    display:block;
+    text-decoration:none;
+    color: yellow;
+    font-size:25px;
+}
+.bg{
+    background-image: url("./media/hi.jpg");
+    background-size: cover;
+    width:100%;
+    height:600px;
+    background-position: center;
+    position:absolute;
+    top:30%;
+}
+.textbox{
+    text-align:center;
+    position: relative;
+    top:30%; left:3%;
+}
+.textbox h1{
+    color:green;
+}
+button{
+    border:1px solid white;
+    border-radius:20px;
+    color:lightsalmon;
+    margin-top:20px;
+    padding:10px;
+    background-color:black;
+    width:170px; height:40px;
+    position:relative;
+    top:30%; left:47%;
+}
+.cardbox{
+    display:flex;
+    justify-content:center;
+    position:absolute;
+    top:900px;
+    box-sizing:border-box;
+    width:100%;
+}
+.card{
+    height:200px;
+    width:200x;
+    margin:20px;
+    border:1px solid white;
+    background-color: rgb(255, 255, 92);
+    color:blue;
+}
+.card h4{
+    text-align:center;
+}
+@media only screen and (max-width:1000px){
+    .cardbox{
+        flex-flow:column;
+        align-items:center;
+        position:absolute;
+        top:1000px;
+    }
+}
+.button{
+    border:1px solid white;
+    border-radius:10px;
+    background-color: #00A5EC;
+    color:white;
+    position:absolute;
+    top:1150px;
+}
+@media only screen and (max-width:1000px){
+    .button{
+        background-color:blue;
+        position:absolute;
+        top:1700px; left:300px;
+    }
+}
+@media only screen and (max-width:576px){
+    .button{
+        background-color:blueviolet;
+        position:absolute;
+        top:1700px; left:120px;
+    }
+}
+.boxflex{
+    display:flex;
+    z-index:5;
+    position:absolute;
+    top:1200px;
+    width:1000px;
+}
+.boxes{
+    border:1px solid black;
+    margin:20px;
+    background-color:orchid;
+    width:60px; height:25px;
+    text-align:center;
+}
+.ichi{
+    justify-content:space-evenly;
+    position:absolute;
+    top:1200px;
+}
+.ni{
+    justify-content: space-around;
+    position:absolute;
+    top:1250px;
+}
+.san{
+    justify-content: space-between;
+    position:absolute;
+    top:1300px;
+}
