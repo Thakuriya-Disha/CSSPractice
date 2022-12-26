@@ -1,0 +1,62 @@
+.q{
+    color:blueviolet;
+}
+button{
+    border:1px solid #00A5EC;
+    border-radius:8px;
+    height:60px; width:180px;
+    background-color: #00A5EC;
+    color:white;
+    font-size:18px;
+}
+p{
+    font-family: 'Sevillana', cursive;
+    font-size:21px;
+}
+.hoverbox{
+    border:1px solid darksalmon;
+    background-color: darksalmon;
+    height:60px; width:60px;
+    transition:2s ease-in-out;
+}
+.hoverbox:hover{
+    width:350px;
+}
+.circle{
+    border:1px solid darkcyan;
+    background-color: darkcyan;
+    height:90px; width:90px;
+    border-radius:50%;
+}
+.round{
+    border:1px solid black;
+    background-color: black;
+    height:90px; width:90px;
+    border-radius:50%;
+}
+.one{
+    border:3px dashed black;
+    font-size:20px;
+    padding:15px;
+}
+.two{
+    visibility:hidden;
+}
+@media only screen and (min-width:480px) and (max-width:767px){
+    .round{
+        border:1px solid #00A5EC;
+        background-color: #00A5EC;
+        height:45px; width:45px;
+        border-radius:50%;
+    }
+    .one{
+        display:none;
+    }
+    .two{
+        visibility:visible;
+        border:2px dashed #00A5EC;
+        font-size:17px;
+        padding:12px;
+        color:#00A5EC;
+    }
+}
