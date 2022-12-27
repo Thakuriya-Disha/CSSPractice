@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Prep5.css">
+    <title>DAY 5</title>
+</head>
+<body>
+    <div class="q"><h2>Implementation of Transition</h2></div>
+    <div class="transitionbox"></div>
+    <br><hr>
+    <div class="q"><h2>Implementation of Transformation</h2></div>
+    <div class="transformationbox"></div>
+    <br><hr>
+    <div class="q">
+        <h2>Implementation of Grid</h2>
+        <div class="parent">
+            <div class="child one"></div>
+            <div class="child two"></div>
+            <div class="child three"></div>
+            <div class="child four"></div>
+            <div class="child five"></div>
+        </div>
+    </div>
+    <br><hr>
+    <div class="q"><h2>What are CSS combinators?</h2></div>
+    <div>
+        <p>
+            Combinators combine the selectors to provide them a useful relationship and the position of content in the
+            document. This comes in handy when you want to style certain elements all at once rather than styling elements
+            individually. There are 4 CSS combinators: 1. Descendant Selector, 2. Child Selector, 3. Adjacent Sibling Selector, 4. General Sibling Selector
+        </p>
+    </div>
+    <h3>DESCENDANT SELECTOR (space)</h3>
+    <div class="desc">
+        <p>Hello World</p>
+        <p>Hello World</p>
+        <h4>Sub-heading:</h4>
+        <p>Hello World</p>
+    </div>
+    <h3>CHILD SELECTOR ( &gt;)</h3>
+    <table border="2px" width="700px">
+        <tr>
+            <th>.classname &gt; span</th>
+            <th>.classname &gt; h4</th>
+            <th>.classname &gt; p</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="childslctr1">
+                    <h4>Hello World</h4>
+                    <span>Hello World</span>
+                    <p>Hello World</p>
+                </div>
+            </td>
+            <td>
+                <div class="childslctr2">
+                    <h4>Hello World</h4>
+                    <span>Hello World</span>
+                    <p>Hello World</p>
+                </div>
+            </td>
+            <td>
+                <div class="childslctr3">
+                    <h4>Hello World</h4>
+                    <span>Hello World</span>
+                    <p>Hello World</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <h3>ADJACENT SIBLING SELECTOR (+)</h3>
+    <div class="adjc">
+        <h4>Heading 1:</h4>
+        <p>Hello World</p>
+        <p>Hello World</p>
+        <h4>Heading 2:</h4>
+        <p>Hello World</p>
+        <p>Hello World</p>
+    </div>
+    <h3>GENERAL SIBLING SELECTOR (~)</h3>
+    <div class="gensel">
+        <p>Hello World</p>
+        <h3>Heading:</h3>
+        <p>Hello World</p>
+        <p>Hello World</p>
+        <h5>Sub-heading:</h5>
+        <p>Hello World</p>
+    </div>
+    <br><hr>
+    <div class="q"><h2>What are pseudo selectors in CSS?</h2></div>
+    <div>
+        <p>
+            They are used to add styles to selectors, but only when those selectors meet certain conditions. A pseudo-class
+            is expressed by adding a colon after a selector in CSS, followed by a pseudo-class such as "hover", "focus" or "active".
+            Few examples of pseudo-selectors are given below:
+        </p>
+        <a href="#">The color of this link is not blue. The color will change if you hover over the link.</a><br><br>
+        <label>Enter your name: </label>
+        <input type="text" value="">&nbsp &nbsp &nbsp The appearance of the box will change because of "focus"
+    </div>
+</body>
+</html>
